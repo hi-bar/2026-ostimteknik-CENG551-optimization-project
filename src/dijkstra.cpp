@@ -1,5 +1,7 @@
 #include <iostream>
 #include <assert.h>
+#include <cstdlib>
+#include <ctime>
 
 const long INF = (1L << 30); // 2^30 as large number -> infinity
 
