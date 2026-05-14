@@ -1,15 +1,18 @@
+//Ostim Teknik Optimization CENG551
+//Mustafa SAĞLAM -- 250802001
+
 #include <iostream>
 #include <assert.h>
 
 const long INF = (1L << 30); // 2^30 as large number -> infinity
 
-int dijkstra()
+void dijkstra()
 {
     std::cout << "Please privode number of nodes!" << std::endl;
 
     int n = 1;
     if (!(std::cin >> n))
-        return -1; // number of nodes taken from user (1..n)
+        return; // number of nodes taken from user (1..n)
     assert(n > 0); // assert an error if n is not greater than 0
 
     // adjacency matrix: weight[i][j] = -1 means no edge
@@ -101,6 +104,6 @@ int dijkstra()
         if (i < n)
             std::cout << '\n';
     }
-    std::cout << '\n';
-    return 0;
+
+    std::cout << "Completed the algorithm!" << std::endl;
 }

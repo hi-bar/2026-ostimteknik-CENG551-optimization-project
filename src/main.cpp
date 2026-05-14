@@ -1,7 +1,7 @@
 #include <iostream>
 #include <assert.h>
 
-int dijkstra();
+void dijkstra();
 
 int main(int argc, char **argv)
 {
