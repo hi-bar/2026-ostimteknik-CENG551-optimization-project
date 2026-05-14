@@ -2,7 +2,7 @@
 #include <vector>
 #include <algorithm>
 
-int northwestcorner() {
+void northwestcorner() {
     int num_factories, num_markets;
 
     // 1. Get Problem Dimensions
@@ -142,6 +142,4 @@ int northwestcorner() {
     std::cout << "\nPress Enter twice to exit...";
     std::cin.get(); 
     std::cin.get(); 
-
-    return 0;
 }

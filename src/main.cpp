@@ -2,8 +2,9 @@
 #include <assert.h>
 
 void dijkstra();
-// int dijkstra();
-int northwestcorner();
+void northwestcorner();
+void graphical_method();
+void revised_simplex();
 
 int main(int argc, char **argv)
 {
@@ -12,8 +13,11 @@ int main(int argc, char **argv)
     while (1)
     {
         std::cout << std::endl;
-        // std::cout << "1) Dijkstra's Algorithm" << std::endl;
-        std::cout << "1) NorthWestCorner's Algorithm" << std::endl;
+        std::cout << "1) Dijkstra's Algorithm" << std::endl;
+        std::cout << "2) NorthWestCorner's Algorithm" << std::endl;
+        std::cout << "3) Reversed Simplex Method" << std::endl;
+        std::cout << "4) Graphical Method" << std::endl;
+        std::cout << "5) ..." << std::endl;
         std::cout << std::endl
                   << "Your choice: ";
 
@@ -28,13 +32,21 @@ int main(int argc, char **argv)
 
         switch (atoi(&selected))
         {
-        // case 1:
-        //     std::cout << "You have selected 1) Dijkstra's Algorithm" << std::endl;
-        //     dijkstra();
-        //     break;
         case 1:
-            std::cout << "You have selected 1) NorthWestCorner's Algorithm" << std::endl;
+            std::cout << "You have selected 1) Dijkstra's Algorithm" << std::endl;
+            dijkstra();
+            break;
+        case 2:
+            std::cout << "You have selected 2) NorthWestCorner's Algorithm" << std::endl;
             northwestcorner();
+            break;
+        case 3:
+            std::cout << "You have selected 3) Reversed Simplex Method" << std::endl;
+            revised_simplex();
+            break;
+        case 4:
+            std::cout << "You have selected 4) Graphical Method" << std::endl;
+            graphical_method();
             break;
 
         default:
