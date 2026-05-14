@@ -19,7 +19,9 @@ int main(int argc, char **argv)
         std::cout << "3) Reversed Simplex Method" << std::endl;
         std::cout << "4) Graphical Method" << std::endl;
         std::cout << "5) Hungarian's Algorithm" << std::endl;
-        std::cout << "5) ..." << std::endl;
+        std::cout << "6) ..." << std::endl;
+        std::cout << "7) ..." << std::endl;
+        
         std::cout << std::endl
                   << "Your choice: ";
 
@@ -51,7 +53,7 @@ int main(int argc, char **argv)
             graphical_method();
             break;
         case 5:
-            std::cout << "You have selected 2) Hungarian's Algorithm" << std::endl;
+            std::cout << "You have selected 5) Hungarian's Algorithm" << std::endl;
             hungarian();
             break;
 
