@@ -2,6 +2,8 @@
 #include <assert.h>
 
 void dijkstra();
+// int dijkstra();
+int northwestcorner();
 
 int main(int argc, char **argv)
 {
@@ -10,7 +12,8 @@ int main(int argc, char **argv)
     while (1)
     {
         std::cout << std::endl;
-        std::cout << "1) Dijkstra's Algorithm" << std::endl;
+        // std::cout << "1) Dijkstra's Algorithm" << std::endl;
+        std::cout << "1) NorthWestCorner's Algorithm" << std::endl;
         std::cout << std::endl
                   << "Your choice: ";
 
@@ -25,9 +28,13 @@ int main(int argc, char **argv)
 
         switch (atoi(&selected))
         {
+        // case 1:
+        //     std::cout << "You have selected 1) Dijkstra's Algorithm" << std::endl;
+        //     dijkstra();
+        //     break;
         case 1:
-            std::cout << "You have selected 1) Dijkstra's Algorithm" << std::endl;
-            dijkstra();
+            std::cout << "You have selected 1) NorthWestCorner's Algorithm" << std::endl;
+            northwestcorner();
             break;
 
         default:
