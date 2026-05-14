@@ -4,6 +4,7 @@
 void dijkstra();
 // int dijkstra();
 int northwestcorner();
+int hungarian();
 
 int main(int argc, char **argv)
 {
@@ -14,6 +15,7 @@ int main(int argc, char **argv)
         std::cout << std::endl;
         // std::cout << "1) Dijkstra's Algorithm" << std::endl;
         std::cout << "1) NorthWestCorner's Algorithm" << std::endl;
+        std::cout << "2) Hungarian's Algorithm" << std::endl;
         std::cout << std::endl
                   << "Your choice: ";
 
@@ -35,6 +37,11 @@ int main(int argc, char **argv)
         case 1:
             std::cout << "You have selected 1) NorthWestCorner's Algorithm" << std::endl;
             northwestcorner();
+            break;
+
+        case 2:
+            std::cout << "You have selected 2) Hungarian's Algorithm" << std::endl;
+            hungarian();
             break;
 
         default:
