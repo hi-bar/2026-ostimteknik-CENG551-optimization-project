@@ -238,7 +238,7 @@ void print_results()
     cout << "\nMinimum Total Cost = " << total_cost << endl;
 }
 
-int hungarian()
+void hungarian()
 {
     cout << "Hungarian Algorithm - Assignment Problem Solver\n";
     cout << "================================================\n";
@@ -293,6 +293,4 @@ int hungarian()
         // Display results
         print_results();
     }
-
-    return 0;
 }

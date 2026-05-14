@@ -5,7 +5,7 @@ void dijkstra();
 void northwestcorner();
 void graphical_method();
 void revised_simplex();
-int hungarian();
+void hungarian();
 
 int main(int argc, char **argv)
 {
