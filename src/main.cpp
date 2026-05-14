@@ -5,6 +5,7 @@ void dijkstra();
 void northwestcorner();
 void graphical_method();
 void revised_simplex();
+int hungarian();
 
 int main(int argc, char **argv)
 {
@@ -17,6 +18,7 @@ int main(int argc, char **argv)
         std::cout << "2) NorthWestCorner's Algorithm" << std::endl;
         std::cout << "3) Reversed Simplex Method" << std::endl;
         std::cout << "4) Graphical Method" << std::endl;
+        std::cout << "5) Hungarian's Algorithm" << std::endl;
         std::cout << "5) ..." << std::endl;
         std::cout << std::endl
                   << "Your choice: ";
@@ -47,6 +49,10 @@ int main(int argc, char **argv)
         case 4:
             std::cout << "You have selected 4) Graphical Method" << std::endl;
             graphical_method();
+            break;
+        case 5:
+            std::cout << "You have selected 2) Hungarian's Algorithm" << std::endl;
+            hungarian();
             break;
 
         default:
